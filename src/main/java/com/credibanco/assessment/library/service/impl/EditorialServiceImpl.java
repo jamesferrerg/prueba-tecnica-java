@@ -12,7 +12,7 @@ import com.credibanco.assessment.library.service.IEditorialService;
 
 @Service
 public class EditorialServiceImpl implements IEditorialService {
-	
+
 	@Autowired
 	private IEditorialDto editorialDto;
 

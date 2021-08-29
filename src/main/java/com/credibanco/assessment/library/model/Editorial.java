@@ -85,4 +85,21 @@ public class Editorial {
 	public void setMaxLibrosRegistrados(Integer maxLibrosRegistrados) {
 		this.maxLibrosRegistrados = maxLibrosRegistrados;
 	}
+	
+	public Editorial() {}
+
+	public Editorial(Long idEditorial, @NotEmpty(message = "nombre no puede estar vacio") String nombre,
+			@NotEmpty(message = "dirección de correspondencia no puede estar vacio") String direccionCorrespondencia,
+			@NotNull(message = "telefono no puede estar vacio") Long telefono,
+			@Email(message = "correo electronico no es valido") String email,
+			@NotNull(message = "maximo de libros registrados no puede estar vacio") Integer maxLibrosRegistrados) {
+		this.idEditorial = idEditorial;
+		this.nombre = nombre;
+		this.direccionCorrespondencia = direccionCorrespondencia;
+		this.telefono = telefono;
+		this.email = email;
+		this.maxLibrosRegistrados = maxLibrosRegistrados;
+	}
+	
+	
 }
